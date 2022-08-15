@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Bishal Timalsina">
+        <meta name="description" content="This page contains all the things i am learning how
+        to create as i learn html.">
+<title>My first web page</title>
+<link rel="icon" href="html5.png" type="image/x-icon">
+<link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+     <h1> My Goals For This Week</h1> 
+
+     <nav>
+  <ul>
+    <li>
+        <a href="#html">Learning HTML</a>
+       
+    </li>
+    <li> <a href="#Vacation">plannng a vacation</a></li>
+
+</ul>
+     </nav>
+        </header>
+     <hr> 
+     <main>
+<article id="html">
+     <h2> I am ready to learn html.</h2>
+     <section>
+     <h3>HTML 5</h3>
+     <p>this is my first web page</p>
+     <img src="img/html5.png" alt="HTML5 LOGO" title="i am learning html" width="200" height="200">
+    </section>
+    <section>
+        <h2>Daily Schedule</h2>
+     <h3>My daily schedule.</h3>
+
+     <p> Let me tell you how :</p>
+     <ol>
+     <li>.....I learn more about web dev. </li>
+   <li>.....I plan out my schedule. </li>
+   <li>.....I use resources from <abbr title="mozilla developer network">
+    <a href="mozilla.html">MDN.</a>
+</abbr>
+</li>
+</ol>
+<aside>
+    <details>
+        <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+        <p>I code<time datetime="PT3H"></time> 3 hour </time> a day</p>
+    </details>
+</aside>
+<br>
+<table>
+    <thead>
+    <caption>My daily schedule</caption>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Time</th>
+        <th>Activity</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th>Morning</th>
+        <td>
+            <time datetime="06:00">6 am</time>-<time datetime="09:00">9 am</time>
+        </td>
+        <td> write code</td>
+    </tr>
+    <tr>
+        <th>Break</th>
+        <td>
+            <time datetime="09:00">9 am</time>-<time datetime="10:00">10 am</time>
+        </td>
+        <td> Eat lunch</td>
+    </tr>
+    <tr>
+        <th>Afternoon</th>
+        <td>
+            <time datetime="10:00">10am</time>-<time datetime="01:00">1 pm</time>
+        </td>
+        <td> write code</td>
+    </tr>
+    <tr>
+        <th>Evening</th>
+        <td rowspan="2"> All other time </td>
+        <td>Free time</td>
+    </tr>
+    <tr>
+        <th>Night</th>
+        <td>sleep</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="2">This is what i do on my daily basiss</td>
+    </tr>
+</tfoot>
+</table>
+</section>
+</article>
+
+<hr>
+<article id="vacation">
+<h2> I am also planning vacation.</h2>
+  <!-- TODO:Add more places-->   
+<p>I've been working hard and <em> really need a getaway.</em></p>
+
+<p>I live in bagmati and i want to visit beach.</p>
+<section>
+<h3>places i want to visit.</h3>
+<ul>
+
+<li><p>I have heared good thing about Goa.</p>
+    <figure>
+
+<img src="img/abc.jpg" alt=" goa" title="must visit" height="200" width="200" loading="lazy">
+<figcaption>
+    Goa entry GAte
+</figcaption>
+</figure>
+
+<li><p>I am also planing to visit dubai. </p></li>      
+
+</ul>
+</section>
+<section>
+<h3>places i want to avoid.</h3>
+<dl>
+    <dt>North pole</dt>
+    <dd>This place is extremly cold</dd>
+    <dt>south pole</dt>
+    <dd>This place is extremly cold</dd>
+    <dt>Mountain tops</dt>
+    <dd>This place is extremly cold</dd>
+    
+</dl> 
+</section>
+</article>
+</main>
+<hr>
+<footer>
+<p>
+&lt;&lt;&lt; &copy;<a href="about.html"> Bishal Timalsina</a> &gt;&gt;&gt;</p>
+<p><figure><figcaption>
+    <a href="#">Back to Top </a></figcaption>
+</figure></p>
+</footer>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
